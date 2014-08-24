@@ -1,0 +1,8 @@
+{
+  "name": "ngModularLog",
+  "version": "1.0.0",
+  "main": "ngModularLog.js",
+  "dependencies": {},
+  "ignore": [
+  ]
+}

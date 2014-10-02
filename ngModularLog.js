@@ -5,7 +5,8 @@ angular.module("aanimals.services.modular-log", []).
 
             return function(message, level) {
                 // If no console, can't log anything.
-                if (window.console) {
+                // Also allow you to silence output e.g. during tests
+                if (window.console && !window.console.silenced) {
                     // If level not defined, use 'console.log'
                     if (!level) {
                         level = "log";
